@@ -9,7 +9,7 @@ font-family: 'Raleway', sans-serif; font-weight: 600; font-size: 24px; color: #f
 
 
 /***********HEADER**/
-header {margin-bottom: 60px; height: 280px; background: url(../images/header-bg.jpg) no-repeat center center; background-size: cover; font-family: 'Raleway', sans-serif;}
+header {margin-bottom: 60px; min-height: 280px; background: url(../images/header-bg.jpg) no-repeat center center; background-size: cover; font-family: 'Raleway', sans-serif;}
 header nav {min-height: 120px; display: flex; justify-content: space-between; align-items: center;}
 .logo {padding: 0 30px;}
 .menu {max-width: 720px; width: 100%;}
@@ -104,3 +104,27 @@ a.uhsome {margin-left: 20px;}
 .footer-list h4 a {font-size: 18px; line-height: 22px; color: #f58024;}
 .footer-list p a {font-size: 16px; line-height: 32px; color: #e7e7e8;}
 .footer-list p a:hover {text-decoration: underline;}
+
+
+
+/*********RESPONSIVE**/
+@media screen and (max-width: 1024px) {
+  .wrapper {padding: 0 20px;}
+  header nav {flex-direction: column;}
+  .logo {padding: 20px 0;}
+  .header-title {justify-content: space-around;}
+  .footer-list ul {display: flex; padding: 0 20px;}
+}
+
+@media screen and (max-width: 1024px) {
+  .cont-bott-list ul li p {font-size: 20px; line-height: 32px;}
+  a.btn {max-width: 200px; height: 60px; font-size: 20px;}
+  .pric-cont-title h2 {font-size: 50px;}
+  p.membership {font-size: 26px;}
+  #footer-top ul {flex-direction: column; align-items: center; text-align: center;}
+  #footer-top ul li {margin-bottom: 50px;}
+  .addi-memb {min-height: 100px; text-align: center;}
+
+  .footer-list ul li {width: 33%; flex-wrap: wrap;}
+
+}
