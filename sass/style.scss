@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Raleway:300,400,500,600,700');
+$orange: #f58220;
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  max-width: 300px;
+  min-height: 80px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin: 0 auto;
+  display: block;
+  line-height: 80px;
+  text-align: center;
+  font-size: 24px;
+
+  &.orange {
+    background: $orange;
+    color: #fff;
+        box-shadow: -12px 12px 20px rgba(0,0,0, .3);
+  }
+
+  &.white {
+    background: #fff;
+    color: #000;
+    box-shadow: -12px 12px 20px rgba(0,0,0, .3);
+  }
+}
+
+.container {
+  max-width: 1220px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.page-title {
+  color: $orange;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: $light;
+  margin-bottom: 30px;
+}
+
+
+
+// ABOUT
+
+.about__top {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 115px;
+
+  .about__title {
+    color: $orange;
+    margin-bottom: 90px;
+  }
+}
+
+.about__title {
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.about__logos-holder {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 140px;
+}
+
+.about__logo {
+  text-align: center;
+  max-width: 200px;
+  width: 100%;
+  padding: 0 10px;
+
+  img {
+    margin-bottom: 45px;
+  }
+}
+
+.about__logo-txt {
+  font-weight: $medium;
+}
+
+.about__top-text {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+
+.about__tour {
+  padding: 70px 0 125px;
+  background: $orange;
+  color: #fff;
+
+  .about__title {
+    margin-bottom: 80px;
+  }
+}
+
+.about__tour-inner {
+  padding: 0 10px;
+  margin: 0 auto;
+  max-width: 920px;
+  width: 100%;
+}
+
+.about__tour-cards {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.tour-card {
+  padding: 10px 70px 10px 50px;
+  text-align: center;
+  max-width: 300px;
+  height: 260px;
+  width: 100%;
+  display: inline-block;
+
+  &.card-shadow {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: -70px;
+      height: 370px;
+      width: 70px;
+      background: url(../images/tour-shadow.png) no-repeat center center;
+      background-size: cover;
+    }
+  }
+}
+
+.tour-card__year {
+  font-weight: $medium;
+}
+
+.tour-card__line {
+  height: 1px;
+  background: #fff;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.tour-card__plus {
+  font-weight: $light;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+
+.tour-card__sq {
+  font-weight: $light;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.about__opening {
+  padding: 90px 0 130px;
+}
+
+.about__opening-inner {
+  margin: 0 auto;
+  max-width: 1070px;
+  width: 100%;
+
+  .about__title {
+    margin-bottom: 70px;
+  }
+}
+
+.about__done-work {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul.done-work__list {
+  width: 45%;
+
+  li {
+      position: relative;
+      padding-left: 50px;
+      font-weight: $light;
+      font-size: 24px;
+      line-height: 24px;
+      margin-bottom: 15px;
+
+      &::before {
+      content: '';
+      position: absolute;
+      width: 32px;
+      height: 25px;
+      background: url(../images/about-done.png) no-repeat center center;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+.about__done-work__line {
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  max-width: 400px;
+  width: 100%;
+  height: 2px;
+  background: #000;
+}
+
+.about__title.caps {
+  text-transform: uppercase;
+}
+
+.about__opening .about__title.caps {
+  margin-bottom: 70px;
+}
+
+.become-member-text {
+  margin: 0 auto;
+  max-width: 770px;
+  width: 100%;
+  text-align: center;
+  font-weight: $light;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+
+.about__see-you-title {
+  font-weight: $medium;
+  color: $orange;
+  font-size: 64px;
+  line-height: 64px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.about__opening-inner .button {
+  margin-bottom: 130px;
+}
+
+.about__membership {
+  color: #58595b;
+  text-align: center;
+}
