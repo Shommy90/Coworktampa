@@ -63,6 +63,9 @@ a {
 
 
 // ABOUT
+.about {
+  padding: 0 10px;
+}
 
 .about__top {
   max-width: 900px;
@@ -140,7 +143,8 @@ a {
   width: 100%;
   display: inline-block;
 
-  &.card-shadow {
+
+  &.card-shadow, .card-shadow-2 {
     position: relative;
 
     &::after {
@@ -545,4 +549,41 @@ ul.done-work__list {
 
 .box-white__txt {
   text-align: center;
+}
+
+
+
+// responsive
+
+@media (max-width: 650px) {
+  .about__logos-holder {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about__logo {
+    margin-bottom: 20px;
+  }
+
+  .about__tour-cards {
+    flex-wrap: wrap;
+  }
+
+  .tour-card {
+    margin-bottom: 30px;
+  }
+
+  ul.done-work__list li {
+    font-size: 16px;
+  }
+}
+
+@media(max-width: 414px) {
+  .about__done-work {
+    flex-wrap: wrap;
+  }
+
+  ul.done-work__list {
+    width: 100%;
+  }
 }
