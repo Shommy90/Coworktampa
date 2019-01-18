@@ -2,7 +2,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
-  line-height: 24px;
 }
 
 * {
@@ -267,7 +266,248 @@ ul.done-work__list li::before {
   margin-bottom: 130px;
 }
 
-.about__membership {
+.bottom-txt {
   color: #58595b;
   text-align: center;
+  line-height: 32px;
+  font-weight: 300;
+}
+
+.pricing {
+  padding: 0 10px;
+  padding-bottom: 140px;
+}
+
+.pricing__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 90px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.pricing__options-box {
+  background: #f58220;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  max-width: 280px;
+  width: 100%;
+  height: 110px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.pricing__options-box:last-of-type {
+  margin-right: 0;
+}
+
+.option-box__img {
+  width: 90px;
+  text-align: center;
+}
+
+.option__text-big {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.option__text-small {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.pricing-title {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 70px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.pricing-title__under-txt {
+  max-width: 650px;
+  width: 100%;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.pricing__tab-holder {
+  margin: 0 auto;
+  margin-bottom: 70px;
+  text-align: center;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.pricing__tab-holder::after {
+  position: absolute;
+  content: '';
+  background: url(../images/shadow-bottom.png) no-repeat center center;
+  background-size: cover;
+  max-width: 972px;
+  width: 100%;
+  height: 28px;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.pricing-tab {
+  display: inline-block;
+  max-width: 320px;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background: #58595b;
+  cursor: pointer;
+  position: relative;
+  margin-right: -3px;
+}
+
+.pricing-tab.active-tab {
+  background: #f58220;
+}
+
+.pricing-tab.active-tab::after {
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 40px;
+  background: #f58220;
+  bottom: -18px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.pricing-tab span {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.pricing-tab__show {
+  padding: 50px 0 0;
+  text-align: center;
+}
+
+.price__per-month {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.price__currency {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  font-size: 36px;
+  margin-right: 3px;
+}
+
+.price__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 64px;
+  line-height: 54px;
+}
+
+.price__month {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  font-size: 16px;
+}
+
+.show__plus-txt__holder {
+  margin-bottom: 90px;
+}
+
+.show__plus-txt,
+.show__plus-sign {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.show__plus-txt .show__plus-txt__orange,
+.show__plus-sign .show__plus-txt__orange {
+  color: #f58220;
+}
+
+.tab-show__bottom-line {
+  margin: 0 auto;
+  margin-top: 85px;
+  max-width: 400px;
+  width: 100%;
+  height: 2px;
+  background: #000;
+}
+
+.pricing-options__wrapper {
+  margin-bottom: 90px;
+}
+
+.pricing-tab__show__holder {
+  text-align: center;
+}
+
+.pricing-tab__show__third {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.pricing-tab__show__third:last-of-type {
+  margin-right: 0;
+}
+
+.pricing-tab__show__third .show__plus-txt {
+  height: 120px;
+}
+
+.price__floor {
+  margin-bottom: 15px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 300;
 }
