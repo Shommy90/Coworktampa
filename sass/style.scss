@@ -144,7 +144,7 @@ a {
   display: inline-block;
 
 
-  &.card-shadow, .card-shadow-2 {
+  &.card-shadow, &.card-shadow-2 {
     position: relative;
 
     &::after {
@@ -158,6 +158,15 @@ a {
       background-size: cover;
     }
   }
+
+  &.card-shadow-2 {
+
+    &::after {
+      display: none;
+    }
+  }
+
+
 }
 
 .tour-card__year {
@@ -552,8 +561,29 @@ ul.done-work__list {
 }
 
 
-
 // responsive
+
+@media(max-width: 1000px) {
+  .pricing__tab-holder {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pricing-tab {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 760px) {
+  .benefits-holder {
+    justify-content: center;
+  }
+  .benefit-box {
+    // margin-bottom: 10px;
+  }
+}
 
 @media (max-width: 650px) {
   .about__logos-holder {
@@ -576,6 +606,19 @@ ul.done-work__list {
   ul.done-work__list li {
     font-size: 16px;
   }
+
+  .tour-card.card-shadow-2 {
+
+    &::after {
+      display: block;
+    }
+  }
+}
+
+@media(max-width: 600px) {
+  .pricing__options-box {
+    margin-right: 0;
+  }
 }
 
 @media(max-width: 414px) {
@@ -586,4 +629,17 @@ ul.done-work__list {
   ul.done-work__list {
     width: 100%;
   }
+
+  .pricing-title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+}
+
+@media(max-width: 320px) {
+
+    .benefit-box p {
+      font-size: 16px;
+    }
 }

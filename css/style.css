@@ -143,11 +143,11 @@ a {
   display: inline-block;
 }
 
-.tour-card.card-shadow, .tour-card .card-shadow-2 {
+.tour-card.card-shadow, .tour-card.card-shadow-2 {
   position: relative;
 }
 
-.tour-card.card-shadow::after, .tour-card .card-shadow-2::after {
+.tour-card.card-shadow::after, .tour-card.card-shadow-2::after {
   position: absolute;
   content: '';
   top: 0;
@@ -156,6 +156,10 @@ a {
   width: 70px;
   background: url(../images/tour-shadow.png) no-repeat center center;
   background-size: cover;
+}
+
+.tour-card.card-shadow-2::after {
+  display: none;
 }
 
 .tour-card__year {
@@ -589,6 +593,31 @@ ul.done-work__list li::before {
   text-align: center;
 }
 
+@media (max-width: 1000px) {
+  .pricing__tab-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .pricing-tab {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 760px) {
+  .benefits-holder {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 650px) {
   .about__logos-holder {
     -ms-flex-wrap: wrap;
@@ -610,6 +639,15 @@ ul.done-work__list li::before {
   ul.done-work__list li {
     font-size: 16px;
   }
+  .tour-card.card-shadow-2::after {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .pricing__options-box {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 414px) {
@@ -619,5 +657,15 @@ ul.done-work__list li::before {
   }
   ul.done-work__list {
     width: 100%;
+  }
+  .pricing-title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+
+@media (max-width: 320px) {
+  .benefit-box p {
+    font-size: 16px;
   }
 }
