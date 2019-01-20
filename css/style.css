@@ -616,6 +616,13 @@ ul.done-work__list li::before {
     -ms-flex-pack: center;
     justify-content: center;
   }
+  .pricing__tab-holder::after {
+    max-width: 375px;
+  }
+  .tour-card {
+    padding: 10px 30px;
+    max-width: 220px;
+  }
 }
 
 @media (max-width: 650px) {

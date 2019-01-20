@@ -583,6 +583,13 @@ ul.done-work__list {
   .benefit-box {
     // margin-bottom: 10px;
   }
+  .pricing__tab-holder::after {
+    max-width: 375px;
+  }
+  .tour-card {
+    padding: 10px 30px;
+    max-width: 220px;
+  }
 }
 
 @media (max-width: 650px) {
